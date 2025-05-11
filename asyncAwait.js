@@ -20,7 +20,7 @@ const p = new Promise(function(resolve,reject){
 const p2 = new Promise(function(resolve,reject){
     //resolve("Promise resolved successfuly");
     setTimeout(function(){
-      resolve("Promise Resolved");
+      resolve("Promise Resolved successfully");
     },10000)
 });
 //async function will always return promise...if It return value then it will be wrapped inside the promise object
