@@ -25,9 +25,9 @@ const p2 = new Promise(function(resolve,reject){
 });
 //async function will always return promise...if It return value then it will be wrapped inside the promise object
 //If we directly return the promise object it will be returned as it is..
-// async function getName(){
-//     return "Deepasri";
-// }
+async function getName(){
+    return "Deepasri";
+}
 
 // async function getName(){
 //     return p;
@@ -43,12 +43,12 @@ const p2 = new Promise(function(resolve,reject){
 1.Do i really need async await
 2.How we handle promises before and now after async await?
 */
-// function getData(){
-//     //Js engine will not wait for thr promise to resolve
-//     p.then((res)=>console.log(res));  
-//     console.log("Namaste Js");//o/p:Namaste Js then after 10s promise is resolved
-// }
-// getData();   
+function getData(){
+    //Js engine will not wait for thr promise to resolve
+    p.then((res)=>console.log(res));  
+    console.log("Namaste Js");//o/p:Namaste Js then after 10s promise is resolved
+}
+getData();   
 
 async function handlePromise(){
     //await is used infront of the promise that need to be resolved
